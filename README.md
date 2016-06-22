@@ -14,6 +14,6 @@ defineClass('projectName.className',{},{})
 - 自动跳转到游戏
 - runtime进行自动归档查询历史
 
-![Demo](walkr.gif)
+![https://github.com/GrayLand119/Walkr-Guides/blob/master/walkr.gif](walkr.gif)
 
 
