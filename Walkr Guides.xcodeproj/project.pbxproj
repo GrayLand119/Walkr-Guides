@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60FE7B5C0618D1708EA5C953 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B20AAA735CC24172C616E /* Pods.framework */; };
+		C36363811D1A25BE00A49ACA /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363801D1A25BE00A49ACA /* JSPatch.framework */; };
+		C36363831D1A25F700A49ACA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363821D1A25F700A49ACA /* libz.tbd */; };
+		C36363851D1A260F00A49ACA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363841D1A260F00A49ACA /* JavaScriptCore.framework */; };
+		C36363871D1A272C00A49ACA /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = C36363861D1A272C00A49ACA /* main.js */; };
+		C38B0B151CDC76F60082B94B /* SatellitePairGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38B0B141CDC76F60082B94B /* SatellitePairGuideViewController.swift */; };
+		C38B0B171CDC785B0082B94B /* SatellitePair.plist in Resources */ = {isa = PBXBuildFile; fileRef = C38B0B161CDC785B0082B94B /* SatellitePair.plist */; };
+		C38B0B211CDC8F950082B94B /* SatelliteInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = C38B0B201CDC8F950082B94B /* SatelliteInfo.txt */; };
+		C3C198611CC62C300088E571 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C198601CC62C300088E571 /* main.m */; };
+		C3C198641CC62C300088E571 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C198631CC62C300088E571 /* AppDelegate.m */; };
+		C3C1986D1CC62C300088E571 /* Walkr_Guides.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3C1986B1CC62C300088E571 /* Walkr_Guides.xcdatamodeld */; };
+		C3C1986F1CC62C300088E571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C1986E1CC62C300088E571 /* Assets.xcassets */; };
+		C3C198721CC62C300088E571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C198701CC62C300088E571 /* LaunchScreen.storyboard */; };
+		C3C1987D1CC62C300088E571 /* Walkr_GuidesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1987C1CC62C300088E571 /* Walkr_GuidesTests.m */; };
+		C3C198881CC62C300088E571 /* Walkr_GuidesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C198871CC62C300088E571 /* Walkr_GuidesUITests.m */; };
+		C3C198A21CC62F640088E571 /* WGNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C198A11CC62F640088E571 /* WGNavigationViewController.m */; };
+		C3C198A51CC6305C0088E571 /* WGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C198A41CC6305C0088E571 /* WGTabBarController.m */; };
+		C3C198AB1CC636220088E571 /* LegendTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C198AA1CC636220088E571 /* LegendTaskViewController.swift */; };
+		C3C198AF1CC638E00088E571 /* WGTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C198AE1CC638E00088E571 /* WGTestView.m */; };
+		C3C198B31CC63F230088E571 /* SFHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C198B21CC63F230088E571 /* SFHeader.swift */; };
+		C3C198BA1CC640E40088E571 /* globe_hightlight.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C198B61CC640E40088E571 /* globe_hightlight.png */; };
+		C3C198BB1CC640E40088E571 /* globe_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C198B71CC640E40088E571 /* globe_normal.png */; };
+		C3C198BC1CC640E40088E571 /* satellite_hightlight.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C198B81CC640E40088E571 /* satellite_hightlight.png */; };
+		C3C198BD1CC640E40088E571 /* satellite_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C198B91CC640E40088E571 /* satellite_normal.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3C198791CC62C300088E571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3C198541CC62C300088E571 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3C1985B1CC62C300088E571;
+			remoteInfo = "Walkr Guides";
+		};
+		C3C198841CC62C300088E571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3C198541CC62C300088E571 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3C1985B1CC62C300088E571;
+			remoteInfo = "Walkr Guides";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D4B35D756DEA80A6693D004 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9A6AC75C3F912ACA66267166 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A08B20AAA735CC24172C616E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36363801D1A25BE00A49ACA /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSPatch.framework; path = "Walkr Guides/Thirdpart/JSPatch.framework"; sourceTree = "<group>"; };
+		C36363821D1A25F700A49ACA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C36363841D1A260F00A49ACA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		C36363861D1A272C00A49ACA /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		C38B0B141CDC76F60082B94B /* SatellitePairGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SatellitePairGuideViewController.swift; sourceTree = "<group>"; };
+		C38B0B161CDC785B0082B94B /* SatellitePair.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SatellitePair.plist; sourceTree = "<group>"; };
+		C38B0B201CDC8F950082B94B /* SatelliteInfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SatelliteInfo.txt; sourceTree = "<group>"; };
+		C3C1985C1CC62C300088E571 /* Walkr Guides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walkr Guides.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C198601CC62C300088E571 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3C198621CC62C300088E571 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3C198631CC62C300088E571 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3C1986C1CC62C300088E571 /* Walkr_Guides.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Walkr_Guides.xcdatamodel; sourceTree = "<group>"; };
+		C3C1986E1CC62C300088E571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3C198711CC62C300088E571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3C198731CC62C300088E571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C198781CC62C300088E571 /* Walkr Guides.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Walkr Guides.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C1987C1CC62C300088E571 /* Walkr_GuidesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Walkr_GuidesTests.m; sourceTree = "<group>"; };
+		C3C1987E1CC62C300088E571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C198831CC62C300088E571 /* Walkr Guides.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Walkr Guides.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C198871CC62C300088E571 /* Walkr_GuidesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Walkr_GuidesUITests.m; sourceTree = "<group>"; };
+		C3C198891CC62C300088E571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C198A01CC62F640088E571 /* WGNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGNavigationViewController.h; sourceTree = "<group>"; };
+		C3C198A11CC62F640088E571 /* WGNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGNavigationViewController.m; sourceTree = "<group>"; };
+		C3C198A31CC6305C0088E571 /* WGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGTabBarController.h; sourceTree = "<group>"; };
+		C3C198A41CC6305C0088E571 /* WGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGTabBarController.m; sourceTree = "<group>"; };
+		C3C198A81CC6317F0088E571 /* WGConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGConst.h; sourceTree = "<group>"; };
+		C3C198AA1CC636220088E571 /* LegendTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegendTaskViewController.swift; sourceTree = "<group>"; };
+		C3C198AC1CC636F30088E571 /* Walkr Guides-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Walkr Guides-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3C198AD1CC638E00088E571 /* WGTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGTestView.h; sourceTree = "<group>"; };
+		C3C198AE1CC638E00088E571 /* WGTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGTestView.m; sourceTree = "<group>"; };
+		C3C198B21CC63F230088E571 /* SFHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFHeader.swift; sourceTree = "<group>"; };
+		C3C198B61CC640E40088E571 /* globe_hightlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe_hightlight.png; sourceTree = "<group>"; };
+		C3C198B71CC640E40088E571 /* globe_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe_normal.png; sourceTree = "<group>"; };
+		C3C198B81CC640E40088E571 /* satellite_hightlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = satellite_hightlight.png; sourceTree = "<group>"; };
+		C3C198B91CC640E40088E571 /* satellite_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = satellite_normal.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3C198591CC62C300088E571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36363851D1A260F00A49ACA /* JavaScriptCore.framework in Frameworks */,
+				C36363831D1A25F700A49ACA /* libz.tbd in Frameworks */,
+				C36363811D1A25BE00A49ACA /* JSPatch.framework in Frameworks */,
+				60FE7B5C0618D1708EA5C953 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C198751CC62C300088E571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C198801CC62C300088E571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		444E6280A08A96624293DA5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D4B35D756DEA80A6693D004 /* Pods.debug.xcconfig */,
+				9A6AC75C3F912ACA66267166 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5383BD0111FDD17E5E61F204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C36363801D1A25BE00A49ACA /* JSPatch.framework */,
+				C36363841D1A260F00A49ACA /* JavaScriptCore.framework */,
+				C36363821D1A25F700A49ACA /* libz.tbd */,
+				A08B20AAA735CC24172C616E /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3C198531CC62C300088E571 = {
+			isa = PBXGroup;
+			children = (
+				C3C1985E1CC62C300088E571 /* Walkr Guides */,
+				C3C1987B1CC62C300088E571 /* Walkr GuidesTests */,
+				C3C198861CC62C300088E571 /* Walkr GuidesUITests */,
+				C3C1985D1CC62C300088E571 /* Products */,
+				444E6280A08A96624293DA5F /* Pods */,
+				5383BD0111FDD17E5E61F204 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3C1985D1CC62C300088E571 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3C1985C1CC62C300088E571 /* Walkr Guides.app */,
+				C3C198781CC62C300088E571 /* Walkr Guides.xctest */,
+				C3C198831CC62C300088E571 /* Walkr Guides.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3C1985E1CC62C300088E571 /* Walkr Guides */ = {
+			isa = PBXGroup;
+			children = (
+				C3C198B51CC640010088E571 /* ImageSources */,
+				C3C198621CC62C300088E571 /* AppDelegate.h */,
+				C3C198631CC62C300088E571 /* AppDelegate.m */,
+				C3C198A01CC62F640088E571 /* WGNavigationViewController.h */,
+				C3C198A11CC62F640088E571 /* WGNavigationViewController.m */,
+				C3C198A31CC6305C0088E571 /* WGTabBarController.h */,
+				C3C198A41CC6305C0088E571 /* WGTabBarController.m */,
+				C3C198951CC62E100088E571 /* Moudles */,
+				C3C1989E1CC62E100088E571 /* Thirdpart */,
+				C3C1989F1CC62E100088E571 /* Utility */,
+				C3C1986E1CC62C300088E571 /* Assets.xcassets */,
+				C3C198701CC62C300088E571 /* LaunchScreen.storyboard */,
+				C3C198731CC62C300088E571 /* Info.plist */,
+				C3C1986B1CC62C300088E571 /* Walkr_Guides.xcdatamodeld */,
+				C3C1985F1CC62C300088E571 /* Supporting Files */,
+			);
+			path = "Walkr Guides";
+			sourceTree = "<group>";
+		};
+		C3C1985F1CC62C300088E571 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C36363861D1A272C00A49ACA /* main.js */,
+				C3C198601CC62C300088E571 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3C1987B1CC62C300088E571 /* Walkr GuidesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3C1987C1CC62C300088E571 /* Walkr_GuidesTests.m */,
+				C3C1987E1CC62C300088E571 /* Info.plist */,
+			);
+			path = "Walkr GuidesTests";
+			sourceTree = "<group>";
+		};
+		C3C198861CC62C300088E571 /* Walkr GuidesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3C198871CC62C300088E571 /* Walkr_GuidesUITests.m */,
+				C3C198891CC62C300088E571 /* Info.plist */,
+			);
+			path = "Walkr GuidesUITests";
+			sourceTree = "<group>";
+		};
+		C3C198951CC62E100088E571 /* Moudles */ = {
+			isa = PBXGroup;
+			children = (
+				C3C198961CC62E100088E571 /* LegendTaskGuide */,
+				C3C1989A1CC62E100088E571 /* SatellitePairGuide */,
+			);
+			path = Moudles;
+			sourceTree = "<group>";
+		};
+		C3C198961CC62E100088E571 /* LegendTaskGuide */ = {
+			isa = PBXGroup;
+			children = (
+				C3C198971CC62E100088E571 /* Controller */,
+				C3C198981CC62E100088E571 /* Model */,
+				C3C198991CC62E100088E571 /* View */,
+			);
+			path = LegendTaskGuide;
+			sourceTree = "<group>";
+		};
+		C3C198971CC62E100088E571 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3C198AC1CC636F30088E571 /* Walkr Guides-Bridging-Header.h */,
+				C3C198AA1CC636220088E571 /* LegendTaskViewController.swift */,
+				C3C198B21CC63F230088E571 /* SFHeader.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C3C198981CC62E100088E571 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3C198991CC62E100088E571 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3C198AD1CC638E00088E571 /* WGTestView.h */,
+				C3C198AE1CC638E00088E571 /* WGTestView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3C1989A1CC62E100088E571 /* SatellitePairGuide */ = {
+			isa = PBXGroup;
+			children = (
+				C38B0B201CDC8F950082B94B /* SatelliteInfo.txt */,
+				C3C1989B1CC62E100088E571 /* Controller */,
+				C3C1989C1CC62E100088E571 /* Model */,
+				C3C1989D1CC62E100088E571 /* View */,
+				C38B0B161CDC785B0082B94B /* SatellitePair.plist */,
+			);
+			path = SatellitePairGuide;
+			sourceTree = "<group>";
+		};
+		C3C1989B1CC62E100088E571 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C38B0B141CDC76F60082B94B /* SatellitePairGuideViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C3C1989C1CC62E100088E571 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3C1989D1CC62E100088E571 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3C1989E1CC62E100088E571 /* Thirdpart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thirdpart;
+			sourceTree = "<group>";
+		};
+		C3C1989F1CC62E100088E571 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C3C198A81CC6317F0088E571 /* WGConst.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C3C198B51CC640010088E571 /* ImageSources */ = {
+			isa = PBXGroup;
+			children = (
+				C3C198B61CC640E40088E571 /* globe_hightlight.png */,
+				C3C198B71CC640E40088E571 /* globe_normal.png */,
+				C3C198B81CC640E40088E571 /* satellite_hightlight.png */,
+				C3C198B91CC640E40088E571 /* satellite_normal.png */,
+			);
+			path = ImageSources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3C1985B1CC62C300088E571 /* Walkr Guides */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C1988C1CC62C300088E571 /* Build configuration list for PBXNativeTarget "Walkr Guides" */;
+			buildPhases = (
+				7499816A15D2799A3334BD21 /* Check Pods Manifest.lock */,
+				C3C198581CC62C300088E571 /* Sources */,
+				C3C198591CC62C300088E571 /* Frameworks */,
+				C3C1985A1CC62C300088E571 /* Resources */,
+				99AB696DD636B08D86B6D544 /* Embed Pods Frameworks */,
+				C6FC5408AE0C78542AD6932B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Walkr Guides";
+			productName = "Walkr Guides";
+			productReference = C3C1985C1CC62C300088E571 /* Walkr Guides.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3C198771CC62C300088E571 /* Walkr GuidesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C1988F1CC62C300088E571 /* Build configuration list for PBXNativeTarget "Walkr GuidesTests" */;
+			buildPhases = (
+				C3C198741CC62C300088E571 /* Sources */,
+				C3C198751CC62C300088E571 /* Frameworks */,
+				C3C198761CC62C300088E571 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3C1987A1CC62C300088E571 /* PBXTargetDependency */,
+			);
+			name = "Walkr GuidesTests";
+			productName = "Walkr GuidesTests";
+			productReference = C3C198781CC62C300088E571 /* Walkr Guides.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3C198821CC62C300088E571 /* Walkr GuidesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C198921CC62C300088E571 /* Build configuration list for PBXNativeTarget "Walkr GuidesUITests" */;
+			buildPhases = (
+				C3C1987F1CC62C300088E571 /* Sources */,
+				C3C198801CC62C300088E571 /* Frameworks */,
+				C3C198811CC62C300088E571 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3C198851CC62C300088E571 /* PBXTargetDependency */,
+			);
+			name = "Walkr GuidesUITests";
+			productName = "Walkr GuidesUITests";
+			productReference = C3C198831CC62C300088E571 /* Walkr Guides.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3C198541CC62C300088E571 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = GrayLand;
+				TargetAttributes = {
+					C3C1985B1CC62C300088E571 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8QL22JREKT;
+					};
+					C3C198771CC62C300088E571 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C3C1985B1CC62C300088E571;
+					};
+					C3C198821CC62C300088E571 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C3C1985B1CC62C300088E571;
+					};
+				};
+			};
+			buildConfigurationList = C3C198571CC62C300088E571 /* Build configuration list for PBXProject "Walkr Guides" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3C198531CC62C300088E571;
+			productRefGroup = C3C1985D1CC62C300088E571 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3C1985B1CC62C300088E571 /* Walkr Guides */,
+				C3C198771CC62C300088E571 /* Walkr GuidesTests */,
+				C3C198821CC62C300088E571 /* Walkr GuidesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3C1985A1CC62C300088E571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C198BC1CC640E40088E571 /* satellite_hightlight.png in Resources */,
+				C3C198BB1CC640E40088E571 /* globe_normal.png in Resources */,
+				C38B0B211CDC8F950082B94B /* SatelliteInfo.txt in Resources */,
+				C3C198721CC62C300088E571 /* LaunchScreen.storyboard in Resources */,
+				C38B0B171CDC785B0082B94B /* SatellitePair.plist in Resources */,
+				C3C198BA1CC640E40088E571 /* globe_hightlight.png in Resources */,
+				C36363871D1A272C00A49ACA /* main.js in Resources */,
+				C3C198BD1CC640E40088E571 /* satellite_normal.png in Resources */,
+				C3C1986F1CC62C300088E571 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C198761CC62C300088E571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C198811CC62C300088E571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7499816A15D2799A3334BD21 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99AB696DD636B08D86B6D544 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6FC5408AE0C78542AD6932B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3C198581CC62C300088E571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C198AB1CC636220088E571 /* LegendTaskViewController.swift in Sources */,
+				C38B0B151CDC76F60082B94B /* SatellitePairGuideViewController.swift in Sources */,
+				C3C198A51CC6305C0088E571 /* WGTabBarController.m in Sources */,
+				C3C198641CC62C300088E571 /* AppDelegate.m in Sources */,
+				C3C198B31CC63F230088E571 /* SFHeader.swift in Sources */,
+				C3C198A21CC62F640088E571 /* WGNavigationViewController.m in Sources */,
+				C3C1986D1CC62C300088E571 /* Walkr_Guides.xcdatamodeld in Sources */,
+				C3C198611CC62C300088E571 /* main.m in Sources */,
+				C3C198AF1CC638E00088E571 /* WGTestView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C198741CC62C300088E571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C1987D1CC62C300088E571 /* Walkr_GuidesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C1987F1CC62C300088E571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C198881CC62C300088E571 /* Walkr_GuidesUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3C1987A1CC62C300088E571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3C1985B1CC62C300088E571 /* Walkr Guides */;
+			targetProxy = C3C198791CC62C300088E571 /* PBXContainerItemProxy */;
+		};
+		C3C198851CC62C300088E571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3C1985B1CC62C300088E571 /* Walkr Guides */;
+			targetProxy = C3C198841CC62C300088E571 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3C198701CC62C300088E571 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3C198711CC62C300088E571 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3C1988A1CC62C300088E571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3C1988B1CC62C300088E571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3C1988D1CC62C300088E571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D4B35D756DEA80A6693D004 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Hermoe Technology Co., Ltd. (8QL22JREKT)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Walkr",
+					Guides/Thirdpart,
+				);
+				INFOPLIST_FILE = "Walkr Guides/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GrayLand.WalkrGuides;
+				PRODUCT_NAME = "Walkr Guides";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Walkr Guides/Moudles/LegendTaskGuide/Controller/Walkr Guides-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3C1988E1CC62C300088E571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6AC75C3F912ACA66267166 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Hermoe Technology Co., Ltd. (8QL22JREKT)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Walkr",
+					Guides/Thirdpart,
+				);
+				INFOPLIST_FILE = "Walkr Guides/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GrayLand.WalkrGuides;
+				PRODUCT_NAME = "Walkr Guides";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Walkr Guides/Moudles/LegendTaskGuide/Controller/Walkr Guides-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		C3C198901CC62C300088E571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Walkr GuidesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GrayLand.Walkr-GuidesTests";
+				PRODUCT_NAME = "Walkr Guides";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Walkr Guides.app/Walkr Guides";
+			};
+			name = Debug;
+		};
+		C3C198911CC62C300088E571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Walkr GuidesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GrayLand.Walkr-GuidesTests";
+				PRODUCT_NAME = "Walkr Guides";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Walkr Guides.app/Walkr Guides";
+			};
+			name = Release;
+		};
+		C3C198931CC62C300088E571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Walkr GuidesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GrayLand.Walkr-GuidesUITests";
+				PRODUCT_NAME = "Walkr Guides";
+				TEST_TARGET_NAME = "Walkr Guides";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C3C198941CC62C300088E571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Walkr GuidesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GrayLand.Walkr-GuidesUITests";
+				PRODUCT_NAME = "Walkr Guides";
+				TEST_TARGET_NAME = "Walkr Guides";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3C198571CC62C300088E571 /* Build configuration list for PBXProject "Walkr Guides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C1988A1CC62C300088E571 /* Debug */,
+				C3C1988B1CC62C300088E571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3C1988C1CC62C300088E571 /* Build configuration list for PBXNativeTarget "Walkr Guides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C1988D1CC62C300088E571 /* Debug */,
+				C3C1988E1CC62C300088E571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3C1988F1CC62C300088E571 /* Build configuration list for PBXNativeTarget "Walkr GuidesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C198901CC62C300088E571 /* Debug */,
+				C3C198911CC62C300088E571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3C198921CC62C300088E571 /* Build configuration list for PBXNativeTarget "Walkr GuidesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C198931CC62C300088E571 /* Debug */,
+				C3C198941CC62C300088E571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3C1986B1CC62C300088E571 /* Walkr_Guides.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3C1986C1CC62C300088E571 /* Walkr_Guides.xcdatamodel */,
+			);
+			currentVersion = C3C1986C1CC62C300088E571 /* Walkr_Guides.xcdatamodel */;
+			path = Walkr_Guides.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C3C198541CC62C300088E571 /* Project object */;
+}
