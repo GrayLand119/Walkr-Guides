@@ -8,7 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		60FE7B5C0618D1708EA5C953 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B20AAA735CC24172C616E /* Pods.framework */; };
-		C36363811D1A25BE00A49ACA /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363801D1A25BE00A49ACA /* JSPatch.framework */; };
+		C31680701D1C539E0010AEBA /* walkr-loading-a0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31680661D1C539E0010AEBA /* walkr-loading-a0@2x.png */; };
+		C31680711D1C539E0010AEBA /* walkr-loading-a1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31680671D1C539E0010AEBA /* walkr-loading-a1@2x.png */; };
+		C31680721D1C539E0010AEBA /* walkr-loading-a2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31680681D1C539E0010AEBA /* walkr-loading-a2@2x.png */; };
+		C31680731D1C539E0010AEBA /* walkr-loading-a3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31680691D1C539E0010AEBA /* walkr-loading-a3@2x.png */; };
+		C31680741D1C539E0010AEBA /* walkr-loading-a4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C316806A1D1C539E0010AEBA /* walkr-loading-a4@2x.png */; };
+		C31680751D1C539E0010AEBA /* walkr-loading-a5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C316806B1D1C539E0010AEBA /* walkr-loading-a5@2x.png */; };
+		C31680761D1C539E0010AEBA /* walkr-loading-a6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C316806C1D1C539E0010AEBA /* walkr-loading-a6@2x.png */; };
+		C31680771D1C539E0010AEBA /* walkr-loading-a7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C316806D1D1C539E0010AEBA /* walkr-loading-a7@2x.png */; };
+		C31680781D1C539E0010AEBA /* walkr-loading-a8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C316806E1D1C539E0010AEBA /* walkr-loading-a8@2x.png */; };
+		C31680791D1C539E0010AEBA /* walkr-loading-a9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C316806F1D1C539E0010AEBA /* walkr-loading-a9@2x.png */; };
+		C35C29EC1D1C701300DBE384 /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363801D1A25BE00A49ACA /* JSPatch.framework */; };
 		C36363831D1A25F700A49ACA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363821D1A25F700A49ACA /* libz.tbd */; };
 		C36363851D1A260F00A49ACA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363841D1A260F00A49ACA /* JavaScriptCore.framework */; };
 		C36363871D1A272C00A49ACA /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = C36363861D1A272C00A49ACA /* main.js */; };
@@ -54,6 +64,16 @@
 		6D4B35D756DEA80A6693D004 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6AC75C3F912ACA66267166 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A08B20AAA735CC24172C616E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31680661D1C539E0010AEBA /* walkr-loading-a0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a0@2x.png"; sourceTree = "<group>"; };
+		C31680671D1C539E0010AEBA /* walkr-loading-a1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a1@2x.png"; sourceTree = "<group>"; };
+		C31680681D1C539E0010AEBA /* walkr-loading-a2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a2@2x.png"; sourceTree = "<group>"; };
+		C31680691D1C539E0010AEBA /* walkr-loading-a3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a3@2x.png"; sourceTree = "<group>"; };
+		C316806A1D1C539E0010AEBA /* walkr-loading-a4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a4@2x.png"; sourceTree = "<group>"; };
+		C316806B1D1C539E0010AEBA /* walkr-loading-a5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a5@2x.png"; sourceTree = "<group>"; };
+		C316806C1D1C539E0010AEBA /* walkr-loading-a6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a6@2x.png"; sourceTree = "<group>"; };
+		C316806D1D1C539E0010AEBA /* walkr-loading-a7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a7@2x.png"; sourceTree = "<group>"; };
+		C316806E1D1C539E0010AEBA /* walkr-loading-a8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a8@2x.png"; sourceTree = "<group>"; };
+		C316806F1D1C539E0010AEBA /* walkr-loading-a9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a9@2x.png"; sourceTree = "<group>"; };
 		C36363801D1A25BE00A49ACA /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSPatch.framework; path = "Walkr Guides/Thirdpart/JSPatch.framework"; sourceTree = "<group>"; };
 		C36363821D1A25F700A49ACA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		C36363841D1A260F00A49ACA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -96,9 +116,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35C29EC1D1C701300DBE384 /* JSPatch.framework in Frameworks */,
 				C36363851D1A260F00A49ACA /* JavaScriptCore.framework in Frameworks */,
 				C36363831D1A25F700A49ACA /* libz.tbd in Frameworks */,
-				C36363811D1A25BE00A49ACA /* JSPatch.framework in Frameworks */,
 				60FE7B5C0618D1708EA5C953 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +158,23 @@
 				A08B20AAA735CC24172C616E /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C31680651D1C539E0010AEBA /* AnimationRun */ = {
+			isa = PBXGroup;
+			children = (
+				C31680661D1C539E0010AEBA /* walkr-loading-a0@2x.png */,
+				C31680671D1C539E0010AEBA /* walkr-loading-a1@2x.png */,
+				C31680681D1C539E0010AEBA /* walkr-loading-a2@2x.png */,
+				C31680691D1C539E0010AEBA /* walkr-loading-a3@2x.png */,
+				C316806A1D1C539E0010AEBA /* walkr-loading-a4@2x.png */,
+				C316806B1D1C539E0010AEBA /* walkr-loading-a5@2x.png */,
+				C316806C1D1C539E0010AEBA /* walkr-loading-a6@2x.png */,
+				C316806D1D1C539E0010AEBA /* walkr-loading-a7@2x.png */,
+				C316806E1D1C539E0010AEBA /* walkr-loading-a8@2x.png */,
+				C316806F1D1C539E0010AEBA /* walkr-loading-a9@2x.png */,
+			);
+			path = AnimationRun;
 			sourceTree = "<group>";
 		};
 		C3C198531CC62C300088E571 = {
@@ -308,6 +345,7 @@
 		C3C198B51CC640010088E571 /* ImageSources */ = {
 			isa = PBXGroup;
 			children = (
+				C31680651D1C539E0010AEBA /* AnimationRun */,
 				C3C198B61CC640E40088E571 /* globe_hightlight.png */,
 				C3C198B71CC640E40088E571 /* globe_normal.png */,
 				C3C198B81CC640E40088E571 /* satellite_hightlight.png */,
@@ -423,15 +461,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C31680741D1C539E0010AEBA /* walkr-loading-a4@2x.png in Resources */,
 				C3C198BC1CC640E40088E571 /* satellite_hightlight.png in Resources */,
 				C3C198BB1CC640E40088E571 /* globe_normal.png in Resources */,
 				C38B0B211CDC8F950082B94B /* SatelliteInfo.txt in Resources */,
+				C31680761D1C539E0010AEBA /* walkr-loading-a6@2x.png in Resources */,
 				C3C198721CC62C300088E571 /* LaunchScreen.storyboard in Resources */,
+				C31680731D1C539E0010AEBA /* walkr-loading-a3@2x.png in Resources */,
+				C31680701D1C539E0010AEBA /* walkr-loading-a0@2x.png in Resources */,
+				C31680781D1C539E0010AEBA /* walkr-loading-a8@2x.png in Resources */,
 				C38B0B171CDC785B0082B94B /* SatellitePair.plist in Resources */,
 				C3C198BA1CC640E40088E571 /* globe_hightlight.png in Resources */,
+				C31680791D1C539E0010AEBA /* walkr-loading-a9@2x.png in Resources */,
 				C36363871D1A272C00A49ACA /* main.js in Resources */,
+				C31680771D1C539E0010AEBA /* walkr-loading-a7@2x.png in Resources */,
+				C31680721D1C539E0010AEBA /* walkr-loading-a2@2x.png in Resources */,
+				C31680711D1C539E0010AEBA /* walkr-loading-a1@2x.png in Resources */,
 				C3C198BD1CC640E40088E571 /* satellite_normal.png in Resources */,
 				C3C1986F1CC62C300088E571 /* Assets.xcassets in Resources */,
+				C31680751D1C539E0010AEBA /* walkr-loading-a5@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,10 +693,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Hermoe Technology Co., Ltd. (8QL22JREKT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Walkr",
+					Guides/Thirdpart,
+					"$(PROJECT_DIR)/Walkr",
+					Guides/Thirdpart,
 					"$(PROJECT_DIR)/Walkr",
 					Guides/Thirdpart,
 				);
@@ -669,10 +721,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Hermoe Technology Co., Ltd. (8QL22JREKT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Walkr",
+					Guides/Thirdpart,
+					"$(PROJECT_DIR)/Walkr",
+					Guides/Thirdpart,
 					"$(PROJECT_DIR)/Walkr",
 					Guides/Thirdpart,
 				);

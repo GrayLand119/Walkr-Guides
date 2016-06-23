@@ -23,6 +23,7 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
     private var label : UILabel?
     private var starEdit : UITextField?
     private var checkBtn : UIButton?
+    private var goBackBtn : UIButton?
     private var resultLabel : UILabel?
     private var satelliteData : NSArray?
     private var historyTableView : UITableView?
@@ -31,6 +32,7 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
     
     let lightColor = UIColor(red: 0.4, green: 0.8, blue: 1.0, alpha: 1.0)
     let bgColor    = UIColor( red: 0.0706, green: 0.2, blue: 0.2627, alpha: 1.0 )
+    
     
     @objc override func viewDidLoad() {
         
@@ -110,8 +112,15 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         checkBtn?.layer.cornerRadius = 20
         checkBtn?.setTitle("查询匹配", forState: UIControlState.Normal)
         checkBtn?.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        checkBtn?.addTarget(self, action: Selector("onCheck"), forControlEvents: UIControlEvents.TouchUpInside)
+        checkBtn?.addTarget(self, action: #selector(SatellitePairGuideViewController.onCheck), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(checkBtn!)
+        
+//        goBackBtn = UIButton.init()
+//        goBackBtn?.backgroundColor = lightColor
+//        goBackBtn?.layer.cornerRadius = 20
+//        goBackBtn?.setTitle("回到游戏", forState: UIControlState.Normal)
+//        goBackBtn?.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+//        goBackBtn?.addTarget(self, action:Selector("onGoBackToGame"), forControlEvents: UIControlEvents.TouchUpInside)
         
         resultLabel = UILabel()
         resultLabel?.textColor     = UIColor.whiteColor()
@@ -146,7 +155,7 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         
         checkBtn?.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(starEdit!.snp_bottom).offset(10)
-            make.centerX.equalTo(checkBtn!.superview!)
+            make.right.equalTo(checkBtn!.superview!).offset(-20)
             make.size.equalTo(CGSizeMake(100, 40))
         }
         
@@ -163,7 +172,8 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         }
     }
     
-    func onCheck() {
+    func onCheck()
+    {
 //        starEdit?.resignFirstResponder()
         
         var isFound             = false
@@ -216,6 +226,11 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
             historyData?.insertObject(historyStr, atIndex: 0)
             historyTableView?.reloadData()
         }
+    }
+    
+    func onGoBackToGame()
+    {
+        UIApplication.sharedApplication().openURL(NSURL.init(string: "walkrgame://")!)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

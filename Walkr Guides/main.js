@@ -2,22 +2,33 @@ defineClass('Walkr_Guides.SatellitePairGuideViewController', {
             viewDidLoad: function() {
             self.ORIGviewDidLoad()
             
-            self.myPrint("123123")
+            console.log("123")
             
-            require('UIAlertController, UIAlertAction')
-            var ws = __weak(self)
-            var alert = UIAlertController.alertControllerWithTitle_message_preferredStyle("是否退出此次编辑?","",1)
-            var cancel = UIAlertAction.actionWithTitle_style_handler("否", 1, null)
-            var ok = UIAlertAction.actionWithTitle_style_handler("是", 0, block('UIAlertAction',
-                                                                               function(action){
-                                                                               
-                                                                               }))
-            alert.addAction(cancel)
-            alert.addAction(ok)
-            self.presentViewController_animated_completion(alert, YES, null)
+            var views = self.view().subviews()
+            var index = 0
+            console.log('views count:' + views.count())
+            for(index = 0; index<views.count(); index++){
+            
+            var view = views.objectAtIndex(index)
+            if (view.isKindOfClass(require('UIButton').class())) {
+            console.log('this is btn')
+            var title = view.currentTitle()
+            console.log('title:' + title.toJS())
+            if (title.isEqualToString("查询匹配")){
+                view.setTitle_forState("回到游戏", 0)
+                view.removeTarget_action_forControlEvents(self, 'onCheck', 64)
+                view.addTarget_action_forControlEvents(self,'onGoBackToGame',64)
+            }
+            }
+            }
             },
             
-            myPrint: function(inpuStr){
-                console.log(inpuStr)
+            
+            onGoBackToGame: function()
+            {
+                console.log('aaaa')
+                var urls = require('NSURL').init("walkrgame://")
+            
+                require('UIApplication').sharedApplication().openURL(urls)
             }
 },{})

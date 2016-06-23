@@ -1,7 +1,7 @@
 PODS:
-  - Masonry (0.6.4)
+  - Masonry (1.0.1)
   - RunTrace (1.2)
-  - SnapKit (0.18.0)
+  - SnapKit (0.21.1)
 
 DEPENDENCIES:
   - Masonry
@@ -9,8 +9,8 @@ DEPENDENCIES:
   - SnapKit
 
 SPEC CHECKSUMS:
-  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   RunTrace: 4daf5c37b5d8dc0afdb7767eee7c34e1d7794336
-  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
+  SnapKit: bbad04cb016c7cead63965f16b00c09318d271ee
 
 COCOAPODS: 0.39.0

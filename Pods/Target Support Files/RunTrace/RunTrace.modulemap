@@ -1,6 +1,0 @@
-framework module RunTrace {
-  umbrella header "RunTrace-umbrella.h"
-
-  export *
-  module * { export * }
-}
