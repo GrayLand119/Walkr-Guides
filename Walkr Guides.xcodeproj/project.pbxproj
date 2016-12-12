@@ -18,16 +18,15 @@
 		C31680771D1C539E0010AEBA /* walkr-loading-a7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C316806D1D1C539E0010AEBA /* walkr-loading-a7@2x.png */; };
 		C31680781D1C539E0010AEBA /* walkr-loading-a8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C316806E1D1C539E0010AEBA /* walkr-loading-a8@2x.png */; };
 		C31680791D1C539E0010AEBA /* walkr-loading-a9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C316806F1D1C539E0010AEBA /* walkr-loading-a9@2x.png */; };
-		C35C29EC1D1C701300DBE384 /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363801D1A25BE00A49ACA /* JSPatch.framework */; };
 		C36363831D1A25F700A49ACA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363821D1A25F700A49ACA /* libz.tbd */; };
 		C36363851D1A260F00A49ACA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363841D1A260F00A49ACA /* JavaScriptCore.framework */; };
 		C36363871D1A272C00A49ACA /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = C36363861D1A272C00A49ACA /* main.js */; };
 		C38B0B151CDC76F60082B94B /* SatellitePairGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38B0B141CDC76F60082B94B /* SatellitePairGuideViewController.swift */; };
 		C38B0B171CDC785B0082B94B /* SatellitePair.plist in Resources */ = {isa = PBXBuildFile; fileRef = C38B0B161CDC785B0082B94B /* SatellitePair.plist */; };
 		C38B0B211CDC8F950082B94B /* SatelliteInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = C38B0B201CDC8F950082B94B /* SatelliteInfo.txt */; };
+		C3B3D9831DFE3DFF006AE0EA /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B3D9821DFE3DFF006AE0EA /* JSPatchPlatform.framework */; };
 		C3C198611CC62C300088E571 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C198601CC62C300088E571 /* main.m */; };
 		C3C198641CC62C300088E571 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C198631CC62C300088E571 /* AppDelegate.m */; };
-		C3C1986D1CC62C300088E571 /* Walkr_Guides.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3C1986B1CC62C300088E571 /* Walkr_Guides.xcdatamodeld */; };
 		C3C1986F1CC62C300088E571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C1986E1CC62C300088E571 /* Assets.xcassets */; };
 		C3C198721CC62C300088E571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C198701CC62C300088E571 /* LaunchScreen.storyboard */; };
 		C3C1987D1CC62C300088E571 /* Walkr_GuidesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1987C1CC62C300088E571 /* Walkr_GuidesTests.m */; };
@@ -74,18 +73,17 @@
 		C316806D1D1C539E0010AEBA /* walkr-loading-a7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a7@2x.png"; sourceTree = "<group>"; };
 		C316806E1D1C539E0010AEBA /* walkr-loading-a8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a8@2x.png"; sourceTree = "<group>"; };
 		C316806F1D1C539E0010AEBA /* walkr-loading-a9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walkr-loading-a9@2x.png"; sourceTree = "<group>"; };
-		C36363801D1A25BE00A49ACA /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSPatch.framework; path = "Walkr Guides/Thirdpart/JSPatch.framework"; sourceTree = "<group>"; };
 		C36363821D1A25F700A49ACA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		C36363841D1A260F00A49ACA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		C36363861D1A272C00A49ACA /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		C38B0B141CDC76F60082B94B /* SatellitePairGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SatellitePairGuideViewController.swift; sourceTree = "<group>"; };
 		C38B0B161CDC785B0082B94B /* SatellitePair.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SatellitePair.plist; sourceTree = "<group>"; };
 		C38B0B201CDC8F950082B94B /* SatelliteInfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SatelliteInfo.txt; sourceTree = "<group>"; };
+		C3B3D9821DFE3DFF006AE0EA /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSPatchPlatform.framework; path = "Walkr Guides/JSPatchPlatform.framework"; sourceTree = "<group>"; };
 		C3C1985C1CC62C300088E571 /* Walkr Guides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walkr Guides.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C198601CC62C300088E571 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3C198621CC62C300088E571 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3C198631CC62C300088E571 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C3C1986C1CC62C300088E571 /* Walkr_Guides.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Walkr_Guides.xcdatamodel; sourceTree = "<group>"; };
 		C3C1986E1CC62C300088E571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3C198711CC62C300088E571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3C198731CC62C300088E571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,10 +114,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C35C29EC1D1C701300DBE384 /* JSPatch.framework in Frameworks */,
 				C36363851D1A260F00A49ACA /* JavaScriptCore.framework in Frameworks */,
 				C36363831D1A25F700A49ACA /* libz.tbd in Frameworks */,
 				60FE7B5C0618D1708EA5C953 /* Pods.framework in Frameworks */,
+				C3B3D9831DFE3DFF006AE0EA /* JSPatchPlatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +150,7 @@
 		5383BD0111FDD17E5E61F204 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C36363801D1A25BE00A49ACA /* JSPatch.framework */,
+				C3B3D9821DFE3DFF006AE0EA /* JSPatchPlatform.framework */,
 				C36363841D1A260F00A49ACA /* JavaScriptCore.framework */,
 				C36363821D1A25F700A49ACA /* libz.tbd */,
 				A08B20AAA735CC24172C616E /* Pods.framework */,
@@ -215,7 +213,6 @@
 				C3C1986E1CC62C300088E571 /* Assets.xcassets */,
 				C3C198701CC62C300088E571 /* LaunchScreen.storyboard */,
 				C3C198731CC62C300088E571 /* Info.plist */,
-				C3C1986B1CC62C300088E571 /* Walkr_Guides.xcdatamodeld */,
 				C3C1985F1CC62C300088E571 /* Supporting Files */,
 			);
 			path = "Walkr Guides";
@@ -558,7 +555,6 @@
 				C3C198641CC62C300088E571 /* AppDelegate.m in Sources */,
 				C3C198B31CC63F230088E571 /* SFHeader.swift in Sources */,
 				C3C198A21CC62F640088E571 /* WGNavigationViewController.m in Sources */,
-				C3C1986D1CC62C300088E571 /* Walkr_Guides.xcdatamodeld in Sources */,
 				C3C198611CC62C300088E571 /* main.m in Sources */,
 				C3C198AF1CC638E00088E571 /* WGTestView.m in Sources */,
 			);
@@ -694,6 +690,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -703,6 +700,11 @@
 					Guides/Thirdpart,
 					"$(PROJECT_DIR)/Walkr",
 					Guides/Thirdpart,
+					"$(PROJECT_DIR)/Walkr",
+					Guides,
+					"$(PROJECT_DIR)/$(PROJECT_NAME)",
+					"$(PROJECT_DIR)/Walkr",
+					Guides,
 				);
 				INFOPLIST_FILE = "Walkr Guides/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -722,6 +724,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -731,6 +734,11 @@
 					Guides/Thirdpart,
 					"$(PROJECT_DIR)/Walkr",
 					Guides/Thirdpart,
+					"$(PROJECT_DIR)/Walkr",
+					Guides,
+					"$(PROJECT_DIR)/$(PROJECT_NAME)",
+					"$(PROJECT_DIR)/Walkr",
+					Guides,
 				);
 				INFOPLIST_FILE = "Walkr Guides/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -830,19 +838,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C3C1986B1CC62C300088E571 /* Walkr_Guides.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C3C1986C1CC62C300088E571 /* Walkr_Guides.xcdatamodel */,
-			);
-			currentVersion = C3C1986C1CC62C300088E571 /* Walkr_Guides.xcdatamodel */;
-			path = Walkr_Guides.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C3C198541CC62C300088E571 /* Project object */;
 }

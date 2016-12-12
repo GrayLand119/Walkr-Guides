@@ -115,12 +115,13 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         checkBtn?.addTarget(self, action: #selector(SatellitePairGuideViewController.onCheck), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(checkBtn!)
         
-//        goBackBtn = UIButton.init()
-//        goBackBtn?.backgroundColor = lightColor
-//        goBackBtn?.layer.cornerRadius = 20
-//        goBackBtn?.setTitle("回到游戏", forState: UIControlState.Normal)
-//        goBackBtn?.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-//        goBackBtn?.addTarget(self, action:Selector("onGoBackToGame"), forControlEvents: UIControlEvents.TouchUpInside)
+        goBackBtn = UIButton.init()
+        goBackBtn?.backgroundColor = lightColor
+        goBackBtn?.layer.cornerRadius = 20
+        goBackBtn?.setTitle("回到游戏", forState: UIControlState.Normal)
+        goBackBtn?.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        goBackBtn?.addTarget(self, action:#selector(SatellitePairGuideViewController.onGoBackToGame), forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(goBackBtn!)
         
         resultLabel = UILabel()
         resultLabel?.textColor     = UIColor.whiteColor()
@@ -170,6 +171,12 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
             make.top.equalTo(resultLabel!.snp_bottom).offset(5)
             make.left.right.bottom.equalTo(historyTableView!.superview!)
         }
+        
+        goBackBtn?.snp_makeConstraints(closure: { (make) in
+            make.left.equalTo(starEdit!)
+            make.top.equalTo(checkBtn!)
+            make.size.equalTo(CGSizeMake(100, 40))
+        })
     }
     
     func onCheck()
@@ -261,7 +268,9 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
             return false
         }
     }
-    
+//    func checkChrismasTime() -> Bool {
+//        
+//    }
     
     func autoShowNoticeVie()
     {

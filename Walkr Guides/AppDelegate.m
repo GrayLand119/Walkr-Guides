@@ -10,7 +10,7 @@
 #import "WGConst.h"
 #import "WGTabBarController.h"
 
-#import <JSPatch/JSPatch.h>
+#import <JSPatchPlatform/JSPatch.h>//1.6.4
 
 @interface AppDelegate ()
 <UITabBarControllerDelegate>
