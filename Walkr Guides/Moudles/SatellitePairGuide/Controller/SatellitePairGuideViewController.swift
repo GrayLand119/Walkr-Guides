@@ -34,8 +34,8 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
     let bgColor    = UIColor( red: 0.0706, green: 0.2, blue: 0.2627, alpha: 1.0 )
     
     
-    @objc override func viewDidLoad() {
-        
+    @objc override func viewDidLoad()
+    {
         super.viewDidLoad()
         
 //        let file = NSData.dataWithContentsOfMappedFile("Pair.rtf")
@@ -82,10 +82,27 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         
         self.setupViews()
         self.setupLayout()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SatellitePairGuideViewController.onKeyBoardShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SatellitePairGuideViewController.onKeyBoardHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        
     }
     
-    private func setupViews() {
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
         
+        self.autoShowNoticeVie()
+    }
+    
+    deinit
+    {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    private func setupViews()
+    {
         self.view.backgroundColor = bgColor
         
         label = UILabel()
@@ -100,10 +117,12 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         starEdit?.backgroundColor    = UIColor.whiteColor()
         starEdit?.layer.cornerRadius = 15
         starEdit?.delegate           = self
+//        starEdit?.text = "微风"
         starEdit?.placeholder        = "例如:查询[微风沙漠],输入[微风]或[沙漠]或[风沙]等等都可以"
         starEdit?.clearButtonMode    = UITextFieldViewMode.Always;
         starEdit?.leftView           = UIView.init(frame: CGRectMake(0, 0, 15, 0))
         starEdit?.leftViewMode       = UITextFieldViewMode.Always;
+        starEdit?.returnKeyType = UIReturnKeyType.Search
         self.view.addSubview(starEdit!)
         
         
@@ -138,47 +157,80 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         historyTableView?.separatorColor  = bgColor
         
         self.view.addSubview(historyTableView!)
+
     }
-    
-    private func setupLayout() {
-        
-        label?.snp_makeConstraints { (make) -> Void in
-            make.left.equalTo(20)
-            make.top.equalTo(30)
-        }
-        
-        starEdit?.snp_makeConstraints { (make) -> Void in
-            make.left.equalTo(20)
-            make.top.equalTo((label!.snp_bottom)).offset(10)
-            make.width.equalTo(SCREEN_WIDTH - 40)
-            make.height.equalTo(30)
-        }
+    private func setupLayout()
+    {
+        goBackBtn?.snp_makeConstraints(closure: { (make) in
+            make.left.equalTo(starEdit!)
+            make.bottom.equalTo(-10)
+            make.size.equalTo(CGSizeMake(100, 40))
+        })
         
         checkBtn?.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(starEdit!.snp_bottom).offset(10)
+            make.bottom.equalTo(goBackBtn!)
             make.right.equalTo(checkBtn!.superview!).offset(-20)
             make.size.equalTo(CGSizeMake(100, 40))
         }
         
+        starEdit?.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(20)
+            make.bottom.equalTo((goBackBtn!.snp_top)).offset(-10)
+            make.width.equalTo(SCREEN_WIDTH - 40)
+            make.height.equalTo(30)
+        }
+        
+        label?.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(20)
+            make.bottom.equalTo(starEdit!.snp_top).offset(-10)
+        }
+        
+        
         resultLabel?.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(checkBtn!.snp_bottom).offset(5)
+            make.bottom.equalTo(label!.snp_top).offset(-5)
             make.centerX.equalTo(resultLabel!.superview!)
             make.width.equalTo(resultLabel!.superview!).offset(-40)
-            make.height.equalTo(45)
+            //            make.height.equalTo(45)
         }
         
         historyTableView?.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(resultLabel!.snp_bottom).offset(5)
-            make.left.right.bottom.equalTo(historyTableView!.superview!)
+            make.bottom.equalTo(resultLabel!.snp_top).offset(-5)
+            make.left.right.top.equalTo(historyTableView!.superview!)
         }
         
-        goBackBtn?.snp_makeConstraints(closure: { (make) in
-            make.left.equalTo(starEdit!)
-            make.top.equalTo(checkBtn!)
-            make.size.equalTo(CGSizeMake(100, 40))
-        })
+        
     }
     
+    // MARK: OnEvent
+    func onKeyBoardShow(sender: NSNotification) -> Void
+    {
+        let dic = sender.userInfo! as NSDictionary
+        let iHeight = dic[UIKeyboardFrameEndUserInfoKey]?.CGRectValue().size.height
+        
+        UIView.animateWithDuration(0.25) { 
+            
+            self.goBackBtn!.snp_updateConstraints(closure: { (make) in
+                make.bottom.equalTo(-iHeight! - 15)
+                make.left.equalTo(self.starEdit!)
+                make.size.equalTo(CGSizeMake(100, 40))
+            })
+            
+            self.view.layoutIfNeeded()
+        }
+    }
+    func onKeyBoardHide(sender: NSNotification) -> Void
+    {
+        UIView.animateWithDuration(0.25) {
+            
+            self.goBackBtn!.snp_updateConstraints(closure: { (make) in
+                make.bottom.equalTo(-15)
+                make.left.equalTo(self.starEdit!)
+                make.size.equalTo(CGSizeMake(100, 40))
+            })
+            
+            self.view.layoutIfNeeded()
+        }
+    }
     func onCheck()
     {
 //        starEdit?.resignFirstResponder()
@@ -234,22 +286,11 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
             historyTableView?.reloadData()
         }
     }
-    
     func onGoBackToGame()
     {
         UIApplication.sharedApplication().openURL(NSURL.init(string: "walkrgame://")!)
     }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        
-        if (textField == starEdit!){
-            self.onCheck()
-        }
-        
-        return true;
-    }
-    
-    
+    // MARK: Other
     func checkTime() -> Bool
     {
         let currentDate   = NSDate()
@@ -268,10 +309,6 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
             return false
         }
     }
-//    func checkChrismasTime() -> Bool {
-//        
-//    }
-    
     func autoShowNoticeVie()
     {
         if (haveShowNotice == true){
@@ -287,13 +324,7 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         }
     }
     
-    override func viewDidAppear(animated: Bool) {
-        
-        super.viewDidAppear(animated)
-        
-        self.autoShowNoticeVie()
-    }
-    
+    // MARK: UITableViewDelegate, UITableViewDataSource
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -321,6 +352,18 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 25
     }
+    
+    
+    // MARK: UITextFieldDelegate
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        if (textField == starEdit!){
+            self.onCheck()
+            textField.resignFirstResponder()
+        }
+        return true;
+    }
+    
 }
 
 
