@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #define RunTraceOpen 0
+
 @interface RunTrace : UIView
 
 @end

@@ -55,14 +55,6 @@ typedef NS_ENUM(NSUInteger, TabBarItemKey) {
                                                           @(TabBarItemKeyImageNameHeightLight):@"globe_hightlight"}];
         
         SatellitePairGuideViewController *vc = [[SatellitePairGuideViewController alloc] init];
-//        vc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"哈哈" image:nil tag:0];
-//        WGNavigationViewController *nvc = [[WGNavigationViewController alloc] initWithRootViewController:vc];
-//        UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:_tabBarItems[0][@(TabBarItemKeyTitle)]
-//                                                           image:[UIImage imageNamed:_tabBarItems[0][@(TabBarItemKeyImageNameNormal)]]
-//                                                   selectedImage:[UIImage imageNamed:_tabBarItems[0][@(TabBarItemKeyImageNameHeightLight)]]];
-//        item.tag = 0;
-//        item.imageInsets = UIEdgeInsetsMake(10, 10, 10, 10);
-//        nvc.tabBarItem = item;
         
         [controllers replaceObjectAtIndex:0 withObject:vc];
         

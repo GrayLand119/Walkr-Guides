@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "WGConst.h"
 #import "WGTabBarController.h"
-
+#import "Walkr_Guides-swift.h"
 #import <JSPatchPlatform/JSPatch.h>//1.6.4
 
 @interface AppDelegate ()
@@ -36,9 +36,11 @@
     [_window makeKeyAndVisible];
     
     // Set TabBarController
-    _tabBarController = [[WGTabBarController alloc] init];
-    _window.rootViewController = _tabBarController;
-    
+//    _tabBarController = [[WGTabBarController alloc] init];
+//    _window.rootViewController = _tabBarController;
+    SatellitePairGuideViewController *vc = [[SatellitePairGuideViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    _window.rootViewController = nvc;
     
 
     

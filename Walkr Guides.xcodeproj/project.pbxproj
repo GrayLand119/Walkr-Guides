@@ -21,6 +21,8 @@
 		C36363831D1A25F700A49ACA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363821D1A25F700A49ACA /* libz.tbd */; };
 		C36363851D1A260F00A49ACA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36363841D1A260F00A49ACA /* JavaScriptCore.framework */; };
 		C36363871D1A272C00A49ACA /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = C36363861D1A272C00A49ACA /* main.js */; };
+		C3643B7C1E84F1BA00657FBB /* satellitePairs.dic in Resources */ = {isa = PBXBuildFile; fileRef = C3643B7B1E84F1BA00657FBB /* satellitePairs.dic */; };
+		C3643B7F1E84F29D00657FBB /* WGPairCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3643B7E1E84F29D00657FBB /* WGPairCell.m */; };
 		C38B0B151CDC76F60082B94B /* SatellitePairGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38B0B141CDC76F60082B94B /* SatellitePairGuideViewController.swift */; };
 		C38B0B171CDC785B0082B94B /* SatellitePair.plist in Resources */ = {isa = PBXBuildFile; fileRef = C38B0B161CDC785B0082B94B /* SatellitePair.plist */; };
 		C38B0B211CDC8F950082B94B /* SatelliteInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = C38B0B201CDC8F950082B94B /* SatelliteInfo.txt */; };
@@ -40,6 +42,7 @@
 		C3C198BB1CC640E40088E571 /* globe_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C198B71CC640E40088E571 /* globe_normal.png */; };
 		C3C198BC1CC640E40088E571 /* satellite_hightlight.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C198B81CC640E40088E571 /* satellite_hightlight.png */; };
 		C3C198BD1CC640E40088E571 /* satellite_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C198B91CC640E40088E571 /* satellite_normal.png */; };
+		C3DC61E31E8261FC0053E9E7 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DC61E21E8261FC0053E9E7 /* PreviewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		C36363821D1A25F700A49ACA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		C36363841D1A260F00A49ACA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		C36363861D1A272C00A49ACA /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		C3643B7B1E84F1BA00657FBB /* satellitePairs.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = satellitePairs.dic; sourceTree = "<group>"; };
+		C3643B7D1E84F29D00657FBB /* WGPairCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WGPairCell.h; path = "Walkr Guides/Moudles/SatellitePairGuide/WGPairCell.h"; sourceTree = SOURCE_ROOT; };
+		C3643B7E1E84F29D00657FBB /* WGPairCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WGPairCell.m; path = "Walkr Guides/Moudles/SatellitePairGuide/WGPairCell.m"; sourceTree = SOURCE_ROOT; };
 		C38B0B141CDC76F60082B94B /* SatellitePairGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SatellitePairGuideViewController.swift; sourceTree = "<group>"; };
 		C38B0B161CDC785B0082B94B /* SatellitePair.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SatellitePair.plist; sourceTree = "<group>"; };
 		C38B0B201CDC8F950082B94B /* SatelliteInfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SatelliteInfo.txt; sourceTree = "<group>"; };
@@ -107,6 +113,10 @@
 		C3C198B71CC640E40088E571 /* globe_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe_normal.png; sourceTree = "<group>"; };
 		C3C198B81CC640E40088E571 /* satellite_hightlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = satellite_hightlight.png; sourceTree = "<group>"; };
 		C3C198B91CC640E40088E571 /* satellite_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = satellite_normal.png; sourceTree = "<group>"; };
+		C3DC61E11E8261FC0053E9E7 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		C3DC61E21E8261FC0053E9E7 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		C3DC61E41E8262D30053E9E7 /* Walkr_Guides-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Walkr_Guides-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3DC61E61E826B630053E9E7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +210,7 @@
 		C3C1985E1CC62C300088E571 /* Walkr Guides */ = {
 			isa = PBXGroup;
 			children = (
+				C3643B7B1E84F1BA00657FBB /* satellitePairs.dic */,
 				C3C198B51CC640010088E571 /* ImageSources */,
 				C3C198621CC62C300088E571 /* AppDelegate.h */,
 				C3C198631CC62C300088E571 /* AppDelegate.m */,
@@ -214,6 +225,8 @@
 				C3C198701CC62C300088E571 /* LaunchScreen.storyboard */,
 				C3C198731CC62C300088E571 /* Info.plist */,
 				C3C1985F1CC62C300088E571 /* Supporting Files */,
+				C3DC61E41E8262D30053E9E7 /* Walkr_Guides-Bridging-Header.h */,
+				C3DC61E61E826B630053E9E7 /* PrefixHeader.pch */,
 			);
 			path = "Walkr Guides";
 			sourceTree = "<group>";
@@ -306,6 +319,8 @@
 			isa = PBXGroup;
 			children = (
 				C38B0B141CDC76F60082B94B /* SatellitePairGuideViewController.swift */,
+				C3DC61E11E8261FC0053E9E7 /* PreviewViewController.h */,
+				C3DC61E21E8261FC0053E9E7 /* PreviewViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,6 +335,8 @@
 		C3C1989D1CC62E100088E571 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C3643B7D1E84F29D00657FBB /* WGPairCell.h */,
+				C3643B7E1E84F29D00657FBB /* WGPairCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,7 +438,7 @@
 				TargetAttributes = {
 					C3C1985B1CC62C300088E571 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 8QL22JREKT;
+						DevelopmentTeam = V6AWR4NCMS;
 					};
 					C3C198771CC62C300088E571 = {
 						CreatedOnToolsVersion = 7.2;
@@ -469,6 +486,7 @@
 				C31680781D1C539E0010AEBA /* walkr-loading-a8@2x.png in Resources */,
 				C38B0B171CDC785B0082B94B /* SatellitePair.plist in Resources */,
 				C3C198BA1CC640E40088E571 /* globe_hightlight.png in Resources */,
+				C3643B7C1E84F1BA00657FBB /* satellitePairs.dic in Resources */,
 				C31680791D1C539E0010AEBA /* walkr-loading-a9@2x.png in Resources */,
 				C36363871D1A272C00A49ACA /* main.js in Resources */,
 				C31680771D1C539E0010AEBA /* walkr-loading-a7@2x.png in Resources */,
@@ -554,7 +572,9 @@
 				C3C198A51CC6305C0088E571 /* WGTabBarController.m in Sources */,
 				C3C198641CC62C300088E571 /* AppDelegate.m in Sources */,
 				C3C198B31CC63F230088E571 /* SFHeader.swift in Sources */,
+				C3DC61E31E8261FC0053E9E7 /* PreviewViewController.m in Sources */,
 				C3C198A21CC62F640088E571 /* WGNavigationViewController.m in Sources */,
+				C3643B7F1E84F29D00657FBB /* WGPairCell.m in Sources */,
 				C3C198611CC62C300088E571 /* main.m in Sources */,
 				C3C198AF1CC638E00088E571 /* WGTestView.m in Sources */,
 			);
@@ -689,8 +709,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: one two free Inc (V6AWR4NCMS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: one two free Inc (V6AWR4NCMS)";
+				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -706,13 +727,14 @@
 					"$(PROJECT_DIR)/Walkr",
 					Guides,
 				);
+				GCC_PREFIX_HEADER = "Walkr Guides/PrefixHeader.pch";
 				INFOPLIST_FILE = "Walkr Guides/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GrayLand.WalkrGuides;
 				PRODUCT_NAME = "Walkr Guides";
-				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Walkr Guides/Moudles/LegendTaskGuide/Controller/Walkr Guides-Bridging-Header.h";
+				PROVISIONING_PROFILE = "05880148-f7cb-4bc3-8a39-f24b0803430c";
+				SWIFT_OBJC_BRIDGING_HEADER = "Walkr Guides/Walkr_Guides-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -723,8 +745,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: one two free Inc (V6AWR4NCMS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: one two free Inc (V6AWR4NCMS)";
+				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -740,13 +763,14 @@
 					"$(PROJECT_DIR)/Walkr",
 					Guides,
 				);
+				GCC_PREFIX_HEADER = "Walkr Guides/PrefixHeader.pch";
 				INFOPLIST_FILE = "Walkr Guides/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GrayLand.WalkrGuides;
 				PRODUCT_NAME = "Walkr Guides";
-				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Walkr Guides/Moudles/LegendTaskGuide/Controller/Walkr Guides-Bridging-Header.h";
+				PROVISIONING_PROFILE = "05880148-f7cb-4bc3-8a39-f24b0803430c";
+				SWIFT_OBJC_BRIDGING_HEADER = "Walkr Guides/Walkr_Guides-Bridging-Header.h";
 			};
 			name = Release;
 		};

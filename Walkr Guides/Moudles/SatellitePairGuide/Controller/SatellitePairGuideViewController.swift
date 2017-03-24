@@ -11,7 +11,6 @@ import Foundation
 import UIKit
 import SnapKit
 
-
 let kStar        = "star"
 let kSatellite   = "satellite"
 let kEffect      = "effect"
@@ -24,6 +23,7 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
     private var starEdit : UITextField?
     private var checkBtn : UIButton?
     private var goBackBtn : UIButton?
+    private var previewBtn : UIButton?
     private var resultLabel : UILabel?
     private var satelliteData : NSArray?
     private var historyTableView : UITableView?
@@ -37,6 +37,8 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
     @objc override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         
 //        let file = NSData.dataWithContentsOfMappedFile("Pair.rtf")
 //        let file = NSData.init(contentsOfFile: "/Users/GrayLand/Desktop/QTWorkSpace/Walkr Guides/Walkr Guides/Moudles/SatellitePairGuide/Pair.rtf")
@@ -142,6 +144,15 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         goBackBtn?.addTarget(self, action:#selector(SatellitePairGuideViewController.onGoBackToGame), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(goBackBtn!)
         
+        previewBtn = UIButton.init()
+        previewBtn = UIButton.init()
+        previewBtn?.backgroundColor = lightColor
+        previewBtn?.layer.cornerRadius = 20
+        previewBtn?.setTitle("预览全部星球配对", forState: UIControlState.Normal)
+        previewBtn?.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        previewBtn?.addTarget(self, action:#selector(SatellitePairGuideViewController.onGotoPreview), forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(previewBtn!)
+        
         resultLabel = UILabel()
         resultLabel?.textColor     = UIColor.whiteColor()
         resultLabel?.numberOfLines = 0;
@@ -159,6 +170,7 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         self.view.addSubview(historyTableView!)
 
     }
+    
     private func setupLayout()
     {
         goBackBtn?.snp_makeConstraints(closure: { (make) in
@@ -195,10 +207,16 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
         
         historyTableView?.snp_makeConstraints { (make) -> Void in
             make.bottom.equalTo(resultLabel!.snp_top).offset(-5)
-            make.left.right.top.equalTo(historyTableView!.superview!)
+            make.top.equalTo(70)
+            make.left.right.equalTo(historyTableView!.superview!)
         }
         
-        
+        previewBtn?.snp_makeConstraints(closure: { (make) in
+            make.top.equalTo(20)
+            make.left.equalTo(20)
+            make.right.equalTo(previewBtn!.superview!).offset(-20)
+            make.height.equalTo(40)
+        })
     }
     
     // MARK: OnEvent
@@ -289,6 +307,11 @@ class SatellitePairGuideViewController : UIViewController, UITextFieldDelegate, 
     func onGoBackToGame()
     {
         UIApplication.sharedApplication().openURL(NSURL.init(string: "walkrgame://")!)
+    }
+    func onGotoPreview()
+    {
+        let vc = PreviewViewController()
+        self.navigationController?.pushViewController(vc, animated:true)
     }
     // MARK: Other
     func checkTime() -> Bool
